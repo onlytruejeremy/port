@@ -120,7 +120,6 @@ export const MenuLink = styled(Link)`
   }
   &:active {
     transform: traslateY(3rem);
-    color: #e38b06;
   }
 
   @media only screen and (max-width: 1000px) {
