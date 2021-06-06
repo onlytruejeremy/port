@@ -2,6 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Nav/NavBar";
+import ScrollToTop from "./components/Scroll/Scroll";
 import { GlobalStyles } from "./globalStyles";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -15,11 +16,12 @@ export default function App() {
     dBlue: "#170B3B",
     purple: "#341948",
     pHaze: "#9388A2",
-    light: "floralWhite"
+    light: "floralWhite",
   };
   return (
     <>
       <ThemeProvider theme={theme}>
+        <ScrollToTop />
         <GlobalStyles />
         <Navbar />
         <Switch>

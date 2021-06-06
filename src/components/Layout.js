@@ -151,10 +151,11 @@ export const ItemLink = styled.a`
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  background: ${({ theme }) => theme.dark};
+  background: ${({ theme }) => theme.purple};
   padding: 10px 20px;
+  font-size: 18px;
   &:hover {
-    color: ${({ theme }) => theme.pHaze};
+    background: ${({ theme }) => theme.pHaze};
   }
   @media screen and (max-width: 850px) {
     border: none;
